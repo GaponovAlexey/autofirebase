@@ -1,12 +1,13 @@
 import React from 'react'
-import { Link, Navigate } from 'react-router-dom'
-
+import { Link } from 'react-router-dom'
 
 export const HomePage = () => {
-const red = Navigate
   return (
     <div>
-      home
+      <h1>home</h1>
+      <Link to='/create'>
+        <button>create</button>
+      </Link>
     </div>
   )
 }
