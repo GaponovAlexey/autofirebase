@@ -3,10 +3,14 @@ import { CreatePost } from 'pages/CreatePost'
 import { HomePage } from 'pages/HomePage'
 import { LoginPage } from 'pages/LoginPage'
 import { RegisterPage } from 'pages/RegisterPage'
-import { Routes, Route, Navigate } from 'react-router-dom'
+import { Routes, Route, Navigate,Link } from 'react-router-dom'
+
 function App() {
   return (
     <div>
+      <h1>
+        <Link to='/' >home</Link>
+      </h1>
       <Routes>
         <Route exact path='/' element={<HomePage />} />
         <Route exact path='/login' element={<LoginPage />} />
