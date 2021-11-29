@@ -25,7 +25,7 @@ export const Login = () => {
           }))
           navigate('/')
       })
-      .catch(console.error)
+      .catch(() => alert('Invalid user'))
   }
   return (
     <div>

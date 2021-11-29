@@ -9,13 +9,8 @@ import { useLocation, useNavigate } from 'react-router'
 
 
 export const SignUp = () => {
-  const location = useLocation()
   const navigate = useNavigate()
-
-  const fromPage = location.state?.from?.pathname || '/'
-
   const dispatch = useDispatch()
-
   const handleRegister = (email, password) => {
     const auth = getAuth()
     createUserWithEmailAndPassword(auth, email, password)
