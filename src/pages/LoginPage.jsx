@@ -4,7 +4,7 @@ import { Link, useLocation, useNavigate } from 'react-router-dom'
 
 export const LoginPage = () => {
   const location = useLocation()
-  const navigate = useNavigate()
+  // const navigate = useNavigate()
 
   const fromPage = location.state?.from?.pathname || '/'
   return (
